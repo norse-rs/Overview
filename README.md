@@ -13,8 +13,23 @@
 
 `norse` aims at providing building blocks for parallel systems focusing on computer graphics.
 
+## Platform Target
 
-### Logo
+These are the usual hardware requirements, but not necessarily for all crates.
+Typically, explicitly noted if a special ISA is required.
+
+- Instruction set: AVX+
+- Vulkan 1.1+
+- Rust 2018
+
+
+## Low Level
+
+- [`billow`](https://github.com/norse-rs/norse-billow) cache-friendly memory block suballocations
+- [`physical-device`](https://github.com/norse-rs/norse-physical-device) query CPU hardware information
+- [`ash-window`](https://github.com/norse-rs/ash-window) surface creation interop for `ash` from window handles
+
+## Logo
 
 Ferris (norse) emoji based on the Ferris emoji made by Dzuk (noct.zone) (CC BY-NC-SA 4.0)
 See `logo/license.txt` for more details.
